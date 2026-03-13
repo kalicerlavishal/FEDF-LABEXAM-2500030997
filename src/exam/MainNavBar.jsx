@@ -4,7 +4,7 @@ import './style.css'
 import Registeration from './Registeration';
 import Home    from './Home';
 import ViewApi from './ViewApi';
-
+import NotFound from './NotFound';
 
 import ViewEmployee from './ViewEmployee';
 
@@ -51,6 +51,7 @@ const MainNavBar = () => {
         <Route path="/registeration" element={<Registeration />} />
         <Route path="/view-employee" element={<ViewEmployee />} />
         <Route path="/view-api" element={<ViewApi/>}/>
+         <Route path="*" element={<NotFound />} />
        
       </Routes>
 
